@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pacman Game</title>
+</head>
+<body style="text-align:center; background:black; color:white;">
+
+    <h1>Pac-Man Game</h1>
+
+    <button onclick="startGame()" style="padding:10px 20px; font-size:18px;">
+        ▶ Play Game
+    </button>
+
+    <div id="game" style="margin-top:20px;"></div>
+
+    <script>
+        function startGame() {
+            document.getElementById("game").innerHTML =
+                '<iframe src="build/web/index.html" width="620" height="700"></iframe>';
+        }
+    </script>
+
+</body>
+</html>
